@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --color-standard: #111111;
+}
+
+
+.body-site {
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid black;
+  
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px 200px;
+}
+
+.logo-name {
+  letter-spacing: 2px;
+  font-weight: normal;
+  width: 90.6px;
+  height: 26.9px;
+  color: var(--color-standard);
+}
+
+.links {
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.links a {
+  color: var(--color-standard);
+  text-decoration: none;
+  margin-left: 30px;
+}
