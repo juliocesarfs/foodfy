@@ -140,6 +140,8 @@ footer p {
   height: 100%;
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
@@ -190,3 +192,16 @@ footer p {
   font-size: 16px;
   color: #999999;
 }
+
+.close-modal {
+  cursor: pointer;
+}
+
+/*==MODAL.ACTIVE ===*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
