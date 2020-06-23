@@ -10,13 +10,17 @@ body {
 
 .body-site {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 940px;
 }
 
 header {
   display: grid;
   grid-template-columns: 150px 200px;
   margin-bottom: 30px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .logo-name {
@@ -26,6 +30,7 @@ header {
   height: 26.9px;
   color: var(--color-standard);
   margin-bottom: 0px;
+  
 }
 
 .links {
@@ -154,8 +159,8 @@ footer p {
   width: 660px;
   height: 413px;
   top: 25%;
-  left: 595px;
-  position: fixed;
+  position: relative;
+  margin: 0 auto;
 }
 
 .modal-img {
