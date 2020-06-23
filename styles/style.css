@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  margin-top: 30px;
+}
+
 .body-site {
   margin: 0 auto;
   max-width: 940px;
@@ -96,6 +100,7 @@ header a {
   display: grid;
   grid-template-columns: 320px 320px 320px;
   grid-row-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .recipe {
@@ -126,7 +131,7 @@ header a {
 footer {
   width: 100%;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 0px;
   height: 62px;
   background: #EEEEEE;
 }
@@ -214,3 +219,23 @@ footer p {
 }
 
 
+/*=== ABOUT PAGE ===*/
+
+.texts {
+  font-family: 'Roboto', sans-serif;
+}
+
+.texts p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.about h2 {
+  margin-top: 50px;
+}
+
+.our-recipes p {
+  margin-bottom: 50px;
+}
