@@ -239,3 +239,9 @@ footer p {
 .our-recipes p {
   margin-bottom: 50px;
 }
+
+/*=== RECIPES PAGE ===*/
+
+#recipes-list-recipes {
+  margin-top: 50px;
+}
