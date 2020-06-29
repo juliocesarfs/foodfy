@@ -1,24 +1,6 @@
-<!DOCTYPE html>
+{% extends 'layout.njk' %}
 
-<html>
-  <head>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <section class="body-site">
-
-      <header>
-        <a href="/"><h1 class="logo-name"> 
-          Foodfy
-        </h1>
-        </a>
-
-        <div class="links">
-          <a href="/about.njk">Sobre</a>
-          <a href="/recipes.njk">Receitas</a>
-        </div>
-      </header>
-
+    {% block content %}
       <div class="apresentation">
         <div class="text-describe">
           <h1>As melhores receitas</h1>
@@ -78,8 +60,6 @@
       
     </section>
 
-    <footer><p>Todos direitos reservados, receitas Foodfy</p></footer>
-
     <div class="modal-overlay">
       <div class="modal">
         <div class="modal-img">
@@ -98,5 +78,4 @@
     </div>
 
     <script src="scripts.js"></script>
-  </body>
-</html>
+  {% endblock %}
