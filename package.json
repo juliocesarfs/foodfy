@@ -1,0 +1,18 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "<img src=\"./assets/chef.png\"/>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crucciatus/foodfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Crucciatus/foodfy/issues"
+  },
+  "homepage": "https://github.com/Crucciatus/foodfy#readme"
+}
