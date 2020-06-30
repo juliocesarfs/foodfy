@@ -1,12 +1,10 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const recipes = require('./data');
 
 const server = express();
 
-const recipes = require('./data');
-
 server.use(express.static('public'));
-
 server.use(express.static('assets'));
 
 server.set('view engine', 'njk');
@@ -31,11 +29,10 @@ server.get('/recipes', function(req, res) {
 });
 
 server.get('/recipes/:index', function(req, res) {
-  const index = req.param.index;
+  const index = req.params.index;
 
   return res.render('recipeDetails', { recipe: recipes[index] });
 })
-
 
 server.listen(5000, function() {
   console.log('Server is running');
