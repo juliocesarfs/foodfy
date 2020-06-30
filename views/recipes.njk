@@ -4,7 +4,7 @@
   <div class="list-recipes" id="recipes-list-recipes">
 
     {% for recipe in recipes %}
-      <div class="recipe">
+      <div class="recipe" id="{{ recipes.indexOf(recipe) }}">
         <img src="{{ recipe.imageHome }}" class="recipe-image" >
         <h3>{{ recipe.title }}</h3>
         <p>{{ recipe.author }}</p>

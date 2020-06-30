@@ -21,14 +21,20 @@ server.get('/', function(req, res) {
   return res.render('index', { recipes });
 });
 
-server.get('/about.njk', function(req, res) {
+server.get('/about', function(req, res) {
   return res.render('about');
 });
 
 
-server.get('/recipes.njk', function(req, res) {
+server.get('/recipes', function(req, res) {
   return res.render('recipes', { recipes });
 });
+
+server.get('/recipes/:index', function(req, res) {
+  const index = req.param.index;
+
+  return res.render('recipeDetails', { recipe: recipes[index] });
+})
 
 
 server.listen(5000, function() {
