@@ -6,6 +6,13 @@
 
 body {
   margin: 0;
+  min-height: 100%;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 h2 {
@@ -15,6 +22,7 @@ h2 {
 .body-site {
   margin: 0 auto;
   max-width: 940px;
+  padding-bottom: 50px;
 }
 
 header {
@@ -131,13 +139,14 @@ header a {
 footer {
   width: 100%;
   position: absolute;
-  margin-top: 0px;
+  
+  bottom: 0;
   height: 62px;
   background: #EEEEEE;
 }
 
 footer p {
-  position: relative;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #999999;

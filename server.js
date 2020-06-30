@@ -27,7 +27,7 @@ server.get('/about.njk', function(req, res) {
 
 
 server.get('/recipes.njk', function(req, res) {
-  return res.render('recipes');
+  return res.render('recipes', { recipes });
 });
 
 
