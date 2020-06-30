@@ -211,6 +211,7 @@ footer p {
 }
 
 .recipeInformations h3 {
+  
   font-weight: bold;
   font-size: 24px;
   color: #111111;
@@ -222,5 +223,13 @@ footer p {
   font-size: 18px;
   color: #444444;
   line-height: 28px;
+}
+
+.recipeInformations a {
+  border: 0;
+  font-size: 12px;
+  color: #999999;
+  cursor: pointer;
+  
 }
 
