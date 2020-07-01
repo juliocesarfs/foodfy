@@ -4,7 +4,7 @@
 # Foodfy
 > Take your culinary skills to the next level. Cook, Explore & Manage Recipes.
 
-# 🖼️ Proposed layouts
+# 🖼️ Layouts
 
 <img src="./assets/foodfy-collage.png"/>
 
