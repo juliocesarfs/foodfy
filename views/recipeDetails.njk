@@ -12,31 +12,29 @@
 
   <section class="recipeInformations">
 
+    <h3>Ingredientes <a class="show" id="ingredients">ESCONDER</a></h3>
     <div class="ingredients">
-      <h3>Ingredientes <a class="show">ESCONDER</a></h3>
-      <div class="list-ingredients">
-        {% for ingredient in recipe.ingredients %}
-          <li>{{ ingredient }};</li>
-        {% endfor %}
-      </div>
+      {% for ingredient in recipe.ingredients %}
+        <li>{{ ingredient }};</li>
+      {% endfor %}
     </div>
-
+  
+    <h3>Modo de preparo <a class="show" id="preparation">ESCONDER</a></h3>
     <div class="preparation">
-      <h3>Modo de preparo <a class="show">ESCONDER</a></h3>
-      <div class="list-preparation">
-        {% for preparation in recipe.preparation %}
-          <li>{{ preparation }}</li>
-        {% endfor %}
-      </div>
+      {% for preparation in recipe.preparation %}
+        <li>{{ preparation }}</li>
+      {% endfor %}
     </div>
-
+    
+    <h3 class="informationTitle">Informações adicionais <a class="show" id="information">ESCONDER</a></h3>
     <div class="information">
-      <h3>Informações adicionais <a class="show">ESCONDER</a></h3>
-      <div class="informationText">
-        <p>{{ recipe.information }}</p>
-      </div>
+      <p>{{ recipe.information }}</p>
     </div>
 
   </section>
   
 {% endblock %}
+
+{% block script %}
+    <script src="/scripts.js"></script>
+  {% endblock %}

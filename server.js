@@ -28,11 +28,14 @@ server.get('/recipes', function(req, res) {
   return res.render('recipes', { recipes });
 });
 
+
 server.get('/recipes/:index', function(req, res) {
   const index = req.params.index;
 
   return res.render('recipeDetails', { recipe: recipes[index] });
 })
+
+
 
 server.listen(5000, function() {
   console.log('Server is running');
