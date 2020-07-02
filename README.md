@@ -12,4 +12,4 @@
 
 Under development. This project is under the [MIT license](https://github.com/Crucciatus/foodfy/blob/master/LICENSE)
 
-Made with 💜 by [*Júlio César*](https://github.com/Crucciatus) 🚀
+Made with 💜 by [*Júlio César*](https://github.com/juliocesarfs) 🚀
