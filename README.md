@@ -9,6 +9,15 @@
 <img src="./assets/foodfy-collage.png"/>
 
 ---
+## :computer: Technologies used
+- [JavaScript](https://www.javascript.com/)
+- [NodeJS](https://nodejs.org/en/)
+- [HTML](https://www.w3.org/TR/html52/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [nunjucks](https://mozilla.github.io/nunjucks/)
+- [nodemon](https://nodemon.io/)
+
+---
 ### 📁 How to download and run this project
 
 you will need [NodeJS](https://nodejs.org/en/) in your computer
