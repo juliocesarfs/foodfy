@@ -24,14 +24,7 @@ you will need [NodeJS](https://nodejs.org/en/) in your computer
   $ git clone https://github.com/juliocesarfs/foodfy.git
 ```
 
-### challengesJS tutorial
-To run the code in exercises that contain **only JavaScript** it is necessary to navigate to the file folder and run:
-```bash
-  $ node <file_name.js>
-``` 
-
-### challenges-fullstack tutorial
-To run the project **challenges-fullstack** it is necessary to navigate to the file folder (challenges-fullstack/<folder-name>) and run:
+Run the commands bellow:
 ```bash
   # Install dependences
   npm install
