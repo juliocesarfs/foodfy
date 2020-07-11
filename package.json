@@ -14,5 +14,12 @@
   "bugs": {
     "url": "https://github.com/Crucciatus/foodfy/issues"
   },
-  "homepage": "https://github.com/Crucciatus/foodfy#readme"
+  "homepage": "https://github.com/Crucciatus/foodfy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  }
 }
