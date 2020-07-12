@@ -1,5 +1,6 @@
-<img src="./assets/chef.png"/>
-
+<div align="center">
+  <img src="./assets/chef.png"/>
+</div>
 
 # Foodfy
 > Take your culinary skills to the next level. Cook, Explore & Manage Recipes.
