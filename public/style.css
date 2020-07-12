@@ -120,6 +120,16 @@ header a {
   border-radius: 15px;
 }
 
+.recipe-image:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  transition: 300ms;
+}
+
 .recipe h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
