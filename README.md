@@ -5,9 +5,18 @@
 # Foodfy
 > Take your culinary skills to the next level. Cook, Explore & Manage Recipes.
 
-# 🖼️ Layouts
+<div align="center">
+  <img style="border: 1px solid black" width="700"src="./assets/foodfy1.gif"/>
+</div>
 
-<img src="./assets/foodfy-collage.png"/>
+<div align="center" style="margin-top: 20px;">
+  <img style="border: 1px solid black"width="700"src="./assets/foodfy2.gif"/>
+</div>
+
+<div align="center" style="margin-top: 20px;">
+  <img style="border: 1px solid black"width="700"src="./assets/foodfy3.gif"/>
+</div>
+
 
 ---
 ## :computer: Technologies used
