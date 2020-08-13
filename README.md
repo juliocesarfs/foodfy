@@ -10,11 +10,11 @@
 </div>
 
 <div align="center" style="margin-top: 20px;">
-  <img style="border: 1px solid black"width="700"src="./assets/foodfy2.gif"/>
+  <img style="border: 1px solid black" width="700"src="./assets/foodfy2.gif"/>
 </div>
 
 <div align="center" style="margin-top: 20px;">
-  <img style="border: 1px solid black"width="700"src="./assets/foodfy3.gif"/>
+  <img style="border: 1px solid black" width="700"src="./assets/foodfy3.gif"/>
 </div>
 
 
