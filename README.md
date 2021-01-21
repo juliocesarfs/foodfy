@@ -62,6 +62,6 @@ localhost:5000
 
 # 📕 License
 
-Under development. Released in 2020. This project is under the [MIT license](https://github.com/Crucciatus/foodfy/blob/master/LICENSE)
+Under development. Released in 2021. This project is under the [MIT license](https://github.com/Crucciatus/foodfy/blob/master/LICENSE)
 
 Made with 💜 by [*Júlio César*](https://github.com/juliocesarfs) 🚀
