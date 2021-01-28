@@ -6,15 +6,15 @@
 > Take your culinary skills to the next level. Cook, Explore & Manage Recipes.
 
 <div align="center">
-  <img style="border: 1px solid black" width="700"src="./assets/foodfy1.gif"/>
+  <img style="border: 1px solid black" width="400" src="./assets/foodfy1.gif"/>
 </div>
 
-<div align="center" style="margin-top: 20px;">
-  <img style="border: 1px solid black" width="700"src="./assets/foodfy2.gif"/>
+<div align="center" style="margin-top: 30px;">
+  <img style="border: 1px solid black" width="400" src="./assets/foodfy2.gif"/>
 </div>
 
-<div align="center" style="margin-top: 20px;">
-  <img style="border: 1px solid black" width="700"src="./assets/foodfy3.gif"/>
+<div align="center" style="margin-top: 30px;">
+  <img style="border: 1px solid black" width="400" src="./assets/foodfy3.gif"/>
 </div>
 
 
