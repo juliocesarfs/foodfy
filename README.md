@@ -10,10 +10,6 @@
 </div>
 
 <div align="center" style="margin-top: 30px;">
-  <img style="border: 1px solid black" width="400" src="./assets/foodfy2.gif"/>
-</div>
-
-<div align="center" style="margin-top: 30px;">
   <img style="border: 1px solid black" width="400" src="./assets/foodfy3.gif"/>
 </div>
 
