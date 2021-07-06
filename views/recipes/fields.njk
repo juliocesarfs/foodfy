@@ -1,0 +1,53 @@
+
+<div class="title">
+  <h1>Criando receita</h1>
+  <button type="submit">Salvar receita</a>
+</div>
+
+<div class="item">
+  <div class="title-item">Imagem da receita</div>
+  <div>
+    <input type="url" name="image" placeholder="http://">
+  </div>
+</div>
+
+<div class="item">
+  <div class="title-item">Nome da receita</div>
+  <div>
+    <input type="text" name="title">
+  </div>
+</div>
+
+<div class="item">
+  <div class="title-item">Ingredientes</div>
+  <div id="ingredients">
+    <div class="ingredient">
+      <input type="text" name="ingredients[]" value=""/>
+    </div>
+  </div>
+
+  <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+</div>
+
+<div class="item">
+  <div class="title-item">Modo de preparo</div>
+  <div>
+    <input type="text" name="preparations[]">
+  </div>
+
+  <button type="button" class="add-prepare">Adicionar novo passo</button>
+</div>
+
+<div class="item">
+  <div class="title-item">Autor da receita</div>
+  <div>
+    <input type="text" name="author">
+  </div>
+</div>
+
+<div class="item">
+  <div class="title-item">Informações adicionais</div>
+  <div>
+    <textarea name="information"></textarea>
+  </div>
+</div>

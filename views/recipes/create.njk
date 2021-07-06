@@ -1,0 +1,7 @@
+{% extends 'recipes/layout.njk' %}
+
+{% block content %}
+  <form action="/recipes" method="POST" class="card">
+    {% include 'recipes/fields.njk'%}
+  </form>
+{% endblock content %}
