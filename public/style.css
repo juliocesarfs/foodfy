@@ -118,6 +118,7 @@ header a {
   height: 140px;
   width: 300px;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .recipe-image:hover {
