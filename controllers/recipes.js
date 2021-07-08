@@ -19,7 +19,6 @@ exports.recipeDetails = function(req, res) {
 
 //ADMIN
 exports.indexAdmin = function(req, res) {
-
   const recipes = data.recipes
   return res.render('recipes/recipes', { recipes })
 }
@@ -32,13 +31,13 @@ exports.post = function(req, res) {
       return res.send('Please fill all fields')
   }
 
-  let { image, title, ingredients, preparations, author, information } = req.body
+  let { image, title, ingredients, preparation, author, information } = req.body
   
   data.recipes.push({
     image,
     title, 
     ingredients,
-    preparations,
+    preparation,
     author,
     information
   })
@@ -46,10 +45,16 @@ exports.post = function(req, res) {
   fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
     if (err) return res.send('Write file error!')
 
-    return res.redirect('admin/recipes')
+    return res.redirect('recipes')
   })
 }
 
 exports.create = function(req, res) {
   return res.render('recipes/create')
+}
+
+exports.show = function(req, res) {
+  const index = req.params.id
+
+  return res.render('recipes/show', { recipe: data.recipes[index] });
 }

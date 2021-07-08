@@ -139,3 +139,68 @@ html, body {
   font-size: 25px;
 
 }
+/*=== ADMIN RECIPE DETAILS ===*/
+#recipes-list-recipes {
+  margin-top: 50px;
+}
+
+/*=== RECIPE DETAILS ===*/
+.title h2 {
+  margin-right: 507px;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.recipeImage {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.recipeImage img {
+  border-radius: 15px;
+}
+
+.recipeDescription {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.recipeDescription h2 {
+  line-height: 4px;
+  font-weight: bold; 
+  font-size: 36px;
+  color: #111111;
+}
+
+.recipeDescription p {
+  line-height: 0;
+  font-size: 20px;
+  color: #777777;
+  margin-top: 32px;
+}
+
+.recipeInformations {
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.recipeInformations h3 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 20px;
+  margin-top: 39px;
+}
+
+.recipeInformations p, li{
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  white-space: pre-line;
+}
+
+.recipeInformations a {
+  border: 0;
+  font-size: 12px;
+  color: #999999;
+  cursor: pointer;
+}

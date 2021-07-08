@@ -10,7 +10,7 @@
         <div class="recipe-detail">
           <h4>{{ recipe.title }}</h4>
           <p>por {{ recipe.author }}</p>
-          <a href="#">Visualizar</a>
+          <a href="/admin/recipes/{{ recipes.indexOf(recipe) }}">Visualizar</a>
         </div>
       </div>
     {% endfor %}
