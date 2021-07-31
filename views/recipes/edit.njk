@@ -3,8 +3,11 @@
 {% block content %}
   <form action="/admin/recipes" method="POST" class="card">
     <div class="title">
-      <h1>Criando receita</h1>
-      <button class="save" type="submit">Salvar receita</button>
+      <h1>Editando receita</h1>
+      <div>
+        <button class="delete" type="submit">Deletar</button>
+        <button class="save" type="submit">Salvar receita</button>
+      </div>
     </div>
     {% include 'recipes/fields.njk'%}
   </form>

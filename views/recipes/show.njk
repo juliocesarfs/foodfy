@@ -3,7 +3,7 @@
 {% block content %}
   <div class="title">
     <h2>Receita: {{ recipe.title }}</h2>
-    <button>Editar receita</button>
+    <a href="/admin/recipes/{{ recipe.id }}/edit">Editar receita</a>
   </div>
 
   <div class="recipeImage">

@@ -28,7 +28,6 @@ function addPreparation() {
 
   newField.children[0].value = ''
   ingredients.appendChild(newField)
-  
 }
 
 document

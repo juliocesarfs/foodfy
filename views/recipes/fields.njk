@@ -1,9 +1,3 @@
-
-<div class="title">
-  <h1>Criando receita</h1>
-  <button type="submit">Salvar receita</button>
-</div>
-
 <div class="item">
   <div class="title-item">Imagem da receita</div>
   <div>
@@ -14,16 +8,18 @@
 <div class="item">
   <div class="title-item">Nome da receita</div>
   <div>
-    <input type="text" name="title">
+    <input type="text" name="title" value="{{ recipe.title }}">
   </div>
 </div>
 
 <div class="item">
   <div class="title-item">Ingredientes</div>
   <div id="ingredients">
+  {% for ingredient in recipe.ingredients %}
     <div class="ingredient">
-      <input type="text" name="ingredients[]" value=""/>
+      <input type="text" name="ingredients[]" value="{{ ingredient }}"/>
     </div>
+   {% endfor %}
   </div>
 
   <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
@@ -32,9 +28,11 @@
 <div class="item">
   <div class="title-item">Modo de preparo</div>
   <div id="preparations">
+  {% for preparation in recipe.preparation %}
     <div class="preparation">
-      <input type="text" name="preparations[]">
+      <input type="text" name="preparations[]" value="{{ preparation }}">
     </div>
+  {% endfor %}
   </div>
 
   <button type="button" class="add-preparation">Adicionar novo passo</button>
@@ -43,13 +41,13 @@
 <div class="item">
   <div class="title-item">Autor da receita</div>
   <div>
-    <input type="text" name="author">
+    <input type="text" name="author" value="{{ recipe.author }}">
   </div>
 </div>
 
 <div class="item">
   <div class="title-item">Informações adicionais</div>
   <div>
-    <textarea name="information"></textarea>
+    <textarea name="information">{{ recipe.information }}</textarea>
   </div>
 </div>

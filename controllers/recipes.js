@@ -56,5 +56,27 @@ exports.create = function(req, res) {
 exports.show = function(req, res) {
   const index = req.params.id
 
-  return res.render('recipes/show', { recipe: data.recipes[index] });
+  if (!data.recipes[index]) return res.send('Recipe not found')
+
+  const recipe = {
+    ...data.recipes[index],
+    id: index
+  }
+
+
+
+  return res.render('recipes/show', { recipe });
+}
+
+exports.edit = function(req, res) {
+  const index = req.params.id
+
+  if (!data.recipes[index]) return res.send('Recipe not found')
+
+  const recipe = {
+    ...data.recipes[index],
+    id: index
+  }
+
+  return res.render('recipes/edit', { recipe })
 }

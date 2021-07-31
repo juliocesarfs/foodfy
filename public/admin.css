@@ -13,6 +13,7 @@ header {
   background-color: #111111;
   height: 80px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 header img {
@@ -78,25 +79,54 @@ html, body {
 /* CREATE */
 .title {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .title h1 {
-  margin-right: 656px;
-  white-space: nowrap;
   margin-bottom: 0;
 }
 
-.title button {
+.title a {
   width: 139px;
   height: 37px;
   background: #6558C3;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 
   font-weight: bold;
   font-size: 16px;
   color: #FFFFFF;
+}
+
+form .save, .delete {
+  height: 37px;
+  
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+form .save {
+  width: 139px;
+  background: #6558C3;
+}
+
+form .delete {
+  width: 92px;
+  background: #DC4747;
+  margin-right: 10px;
 }
 
 .item .title-item {
@@ -114,8 +144,8 @@ html, body {
   background: #FFFFFF;
   border: 1px solid #DDDDDD;
   border-radius: 4px;
-
-  font-size: 30px;
+  padding: 15px 0px 15px 20px;
+  font-size: 16px;
 }
 
 .item button {
@@ -138,6 +168,14 @@ html, body {
 
   font-size: 25px;
 
+}
+
+.ingredient:nth-child(n+2) {
+  margin-top: 10px;
+}
+
+.preparation:nth-child(n+2) {
+  margin-top: 10px;
 }
 /*=== ADMIN RECIPE DETAILS ===*/
 #recipes-list-recipes {
