@@ -1,6 +1,11 @@
-{% extends 'layout.njk' %}
+{% extends 'recipes/layout.njk' %}
 
 {% block content %}
+  <div class="title">
+    <h2>Receita: {{ recipe.title }}</h2>
+    <a href="/admin/recipes/{{ recipe.id }}/edit">Editar receita</a>
+  </div>
+
   <div class="recipeImage">
     <img src="{{ recipe.image }}" alt="">
   </div>
@@ -12,29 +17,26 @@
 
   <section class="recipeInformations">
 
-    <h3>Ingredientes <a class="show" id="ingredients">ESCONDER</a></h3>
+    <h3>Ingredientes</h3>
     <div class="ingredients">
       {% for ingredient in recipe.ingredients %}
         <li>{{ ingredient }};</li>
       {% endfor %}
     </div>
   
-    <h3>Modo de preparo <a class="show" id="preparation">ESCONDER</a></h3>
+    <h3>Modo de preparo</h3>
     <div class="preparation">
       {% for preparation in recipe.preparation %}
         <li>{{ preparation }}</li>
       {% endfor %}
     </div>
     
-    <h3 class="informationTitle">Informações adicionais <a class="show" id="information">ESCONDER</a></h3>
+    <h3 class="informationTitle">Informações adicionais</h3>
     <div class="information">
       <p>{{ recipe.information }}</p>
     </div>
 
   </section>
-  
-{% endblock %}
 
-{% block script %}
-    <script src="/scripts.js"></script>
+  
 {% endblock %}
