@@ -98,3 +98,19 @@ exports.put = function(req, res) {
     return res.redirect('recipes')
   })
 }
+
+exports.delete = function(req, res) {
+  const { id } = req.body
+
+  const filteredRecipes = data.recipes.filter( (recipe) => {
+    return data.recipes.indexOf(recipe) != id
+  })
+
+  data.recipes = filteredRecipes
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send('Write file error!')
+
+    return res.redirect('recipes')
+  })
+}
