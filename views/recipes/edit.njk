@@ -1,14 +1,15 @@
 {% extends 'recipes/layout.njk' %}
 
 {% block content %}
-  <form action="/admin/recipes" method="POST" class="card">
+  <form action="/admin/recipes?_method=PUT" method="POST" class="card">
     <div class="title">
       <h1>Editando receita</h1>
       <div>
-        <button class="delete" type="submit">Deletar</button>
         <button class="save" type="submit">Salvar receita</button>
       </div>
     </div>
     {% include 'recipes/fields.njk'%}
+
+    <input type="hidden" name="id" value="{{ recipe.id }}"> 
   </form>
 {% endblock content %}

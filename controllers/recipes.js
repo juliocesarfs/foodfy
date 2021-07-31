@@ -80,3 +80,21 @@ exports.edit = function(req, res) {
 
   return res.render('recipes/edit', { recipe })
 }
+
+exports.put = function(req, res) {
+  const { id } = req.body
+  if (!data.recipes[id]) return res.send('Recipe not found')
+
+  const recipe = {
+    ...data.recipes[id],
+    ...req.body
+  }
+
+  data.recipes[id] = recipe
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send('Write file error!')
+
+    return res.redirect('recipes')
+  })
+}
