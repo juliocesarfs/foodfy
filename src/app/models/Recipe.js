@@ -1,4 +1,5 @@
 const db = require('../../config/db')
+const { date } = require('../../lib/utils')
 
 module.exports = {
   all(callback) {
@@ -27,15 +28,15 @@ module.exports = {
       data.image,
       data.title,
       data.ingredients,
-      data.preparation,
-      data.created_at,
+      data.preparations,
+      date(Date.now()).iso,
       data.chef
     ]
 
     db.query(query, values, (err, results) => {
       if (err) throw `Database error! ${err}`
 
-      callback(resuls.rows[0])
+      callback(results.rows[0])
     })
   }
 }

@@ -20,6 +20,12 @@
       <input type="text" name="ingredients[]" value="{{ ingredient }}"/>
     </div>
   {% endfor %}
+
+  {% if recipe == null %}
+    <div class="ingredient">
+      <input type="text" name="ingredients[]"/>
+    </div>
+  {% endif %}
   </div>
 
   <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
@@ -33,6 +39,12 @@
       <input type="text" name="preparations[]" value="{{ preparation }}">
     </div>
   {% endfor %}
+
+  {% if recipe == null %}
+    <div class="preparation">
+      <input type="text" name="preparations[]" value="{{ preparation }}">
+    </div>
+  {% endif %}
   </div>
 
   <button type="button" class="add-preparation">Adicionar novo passo</button>
