@@ -2,7 +2,7 @@
 function addIngredient() {
   const ingredients = document.querySelector('#ingredients')
   const fieldContainer = document.querySelectorAll('.ingredient')
-
+  console.log('cheguei')
   // realiza um clone do ultimo ingrediente adicionado
   const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
 
