@@ -18,9 +18,10 @@ module.exports = {
         title,
         ingredients,
         preparation,
+        information,
         created_at,
         chef_id
-      ) VALUES ($1, $2, $3, $4, $5, $6)
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7)
       RETURNING id
     `
 
@@ -29,11 +30,23 @@ module.exports = {
       data.title,
       data.ingredients,
       data.preparations,
+      data.information,
       date(Date.now()).iso,
       data.chef
     ]
 
     db.query(query, values, (err, results) => {
+      if (err) throw `Database error! ${err}`
+
+      callback(results.rows[0])
+    })
+  },
+  find(id, callback) {
+    db.query(`
+    SELECT recipes.*, chefs.name AS chef_name
+    FROM recipes
+    LEFT JOIN chefs ON (recipes.chef_id = chefs.id)
+    WHERE recipes.id = $1`, [id], (err, results) => {
       if (err) throw `Database error! ${err}`
 
       callback(results.rows[0])

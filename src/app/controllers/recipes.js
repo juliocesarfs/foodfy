@@ -33,9 +33,12 @@ module.exports = {
     return res.render('recipes/create')
   },
   show(req, res) {
-    const index = req.params.id
+    Recipe.find(req.params.id, (recipe) => {
+      if (!recipe) return res.send('Recipe not found!')
 
-    return res.send(index)
+      return res.render('recipes/show', { recipe })
+    })
+
   },
   edit(req, res) {
     const index = req.params.id
